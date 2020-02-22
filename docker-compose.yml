@@ -1,0 +1,15 @@
+version: "3.4"
+
+services:
+    server:
+        image: registry.l2junity.org/unafraid/p5sightseer
+        container_name: p5sightseer
+        build: .
+        restart: unless-stopped
+        env_file: .env
+        ports:
+            - target: 5180
+              published: 5180
+              protocol: tcp
+        volumes:
+            - ./worlds:/home/steam/Games/Sightseer/Worlds
