@@ -2,7 +2,7 @@
 
 Build the docker image:
 ```
-docker build -t registry.l2junity.org/unafraid/p5sightseer . --build-arg STEAM_USERNAME=your steam account --build-arg STEAM_PASSWORD=your steam password --build-arg STEAM_GUARD_KEY=the steam guard key if you have it enabled
+docker build -t p5sightseer-server . --build-arg STEAM_USERNAME=your steam account --build-arg STEAM_PASSWORD=your steam password --build-arg STEAM_GUARD_KEY=the steam guard key if you have it enabled
 ```
 
 Note:

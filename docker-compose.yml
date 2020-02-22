@@ -1,8 +1,8 @@
 version: "3.4"
 
 services:
-    server:
-        image: registry.l2junity.org/unafraid/p5sightseer
+    app:
+        image: p5sightseer-server
         container_name: p5sightseer
         build: .
         restart: unless-stopped
